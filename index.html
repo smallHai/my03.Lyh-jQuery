@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>66</title>
+    <!--屏蔽低版本IE-->
+    <!--[if It IE8]><scripe>window.location.href="/66/error"</script><![endif]-->
+    <!-- 引入标题图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/messages_zh.js"></script>
+    <script type="text/javascript" src="js/jquery.form.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="uEditor/ueditor.config.js"></script>
+    <script type="text/javascript" src="uEditor/ueditor.all.min.js"></script>
+    <script type="text/javascript" src="uEditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</head>
+<body>
+    
+    <div id="header">
+        <div class="header_main">
+            <h1>知问</h1>
+            <div class="header_search">
+                <input type="text" name="search" class="search" placeholder="请输入搜索内容...">
+            </div>
+            <div class="header_button">
+                <button id="search_button">查询</button>
+                <button id="question_button">提问</button>
+            </div>
+            <div class="header_member">
+                <a href="javascript:;" id="reg_a">注册</a>
+                <a href="javascript:;" id="member">用户</a> | 
+                <a href="javascript:;" id="login_a">登录</a>
+                <a href="javascript:;" id="logout">退出</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+        <div class="mian_left">
+            <div id="tabs">
+                <ul>
+                    <li><a href="tab1.html">热门</a></li>
+                    <li><a href="tab2.html">推荐</a></li>
+                    <li><a href="tab3.html">最多</a></li>
+                </ul>
+            </div>
+            <div class="content"></div>
+        </div>
+        
+        <div class="mian_right">
+            <div id="accordion">
+               <h1>热门</h1>
+               <div>热门内容</div>
+               <h1>推荐</h1>
+               <div>推荐内容</div>
+               <h1>最多</h1>
+               <div>最多内容</div>
+           </div>
+        </div>
+    </div>
+
+    <form id="reg" title="会员注册" autocomplete="off">
+        <ol class="reg_error"></ol>
+        <p>
+            <label>帐号：<input type="text" name="user" id="user" class="text"></label>
+            <span class="star">*</span>
+        </p>
+    
+        <p>
+            <label>密码：<input type="password" name="pass" id="pass" class="text"></label>
+            <span class="star">*</span>
+        </p>
+    
+        <p>
+            <label>邮箱：<input type="text" name="email" id="email" class="text"></label>
+            <span class="star">*</span>
+        </p>
+    
+        <p>
+            <label>性别：</label>
+            <input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input>
+            <input type="radio" name="sex" value="female" id="female"><label for="female">女<label></input>
+        </p>
+    
+        <p>
+            <label>生日：<input type="text" name="birthday" class="text" id="birthday" readonly></label>
+        </p>
+    </form>
+
+    <form id="login" title="会员登录" autocomplete="off">
+        <ol class="login_error"></ol>
+        <p>
+            <label>帐号：<input type="text" name="login_user" id="login_user" class="text"></label>
+            <span class="star">*</span>
+        </p>
+    
+        <p>
+            <label>密码：<input type="password" name="login_pass" id="login_pass" class="text"></label>
+            <span class="star">*</span>
+        </p>
+
+        <p>
+            <label class="expires"><input type="checkbox" name="expires" id="expires" checked>登录后有效期一周</label>
+        </p>
+    </form>
+
+    <form id="question" title="提问" autocomplete="off">
+        <p>
+            <label>问题名称：<input type="text" name="title" id="qu_title" class="text"></label>
+        </p>
+        <p>
+            <label>问题描述：<textarea name="content" id="content"></textarea></label>
+        </p>
+    </form>
+    
+    <div id="loading"></div>
+    <div id="error"></div>
+
+    <div id="footer">
+        Web俱乐部
+    </div>
+
+</body>
+</html>

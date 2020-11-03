@@ -1,0 +1,257 @@
+body{
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    background: #fff;
+}
+#header{
+    width: 100%;
+    height: 40px;
+    background: url(../img/header_bg.png);
+    position: absolute;
+    top: 0px;
+}
+#header .header_main{
+    width: 800px;
+    height: 40px;
+    margin: 0 auto;
+}
+#header .header_main h1{
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px 10px;
+    color: #666;
+}
+#header .header_search{
+    height: 40px;
+    padding: 6px 0px;
+    float: left;
+}
+#header .header_search .search{
+    width: 300px;
+    height: 26px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    text-indent: 5px;
+}
+#header .header_button{
+    height: 40px;
+    padding: 6px 5px;
+    float: left;
+}
+#header .header_member{
+    height: 40px;
+    line-height: 40px;
+    float: right;
+}
+#header .header_member a{
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+#reg,#login,#question{
+    padding: 15px;
+}
+#reg p,#login p,#question p{
+    margin: 10px 0px;
+    padding: 0px;
+}
+#reg p label,#login p label,#question p label{
+    font-size: 14px;
+}
+#reg p label .text,
+#login p label .text{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    width: 200px;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 5px;
+    color: #333;
+}
+#reg .star,#login .star,#question .star{
+    font-size: 16px;
+    color: red;
+}
+#reg ol.reg_error,
+#login ol.login_error{
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    color: red;
+}
+#reg ol.reg_error li,
+#login ol.login_error li{
+    height: 20px;
+}
+#login p label.expires{
+    cursor: pointer;
+}
+#expires{
+    cursor: pointer;
+    vertical-align: middle;
+}
+#question p label .text{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    width: 450px;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 20px;
+    color: #333;
+}
+
+#main{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+#main .mian_left{
+    width: 490px;
+    float: left;
+}
+#main .mian_right{
+    width: 300px;
+    float: right;
+}
+
+#tabs{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#accordion{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content h4{
+    color: #666;
+    font-weight: normal;
+    margin: 0px;
+}
+.content h3{
+    color: #369;
+    margin: 0px;
+}
+.content .editor{
+    color: #333;
+    line-height: 180%;
+}
+.content .editor p{
+    margin: 0px;
+}
+.content .buttom{
+    padding: 0px;
+    padding-top: 5px;
+}
+.content hr{
+    color: #ccc;
+    height: 1px;
+}
+.content .buttom span.comment{
+    color: #369;
+    cursor: pointer;
+}
+.content .buttom span.up{
+    float: right;
+    color: #369;
+    cursor: pointer;
+}
+.content .buttom span.down{
+    float: right;
+    color: #369;
+    cursor: pointer;
+}
+.content .comment_list{
+    display: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    min-height: 25px;
+    padding: 5px 10px;
+}
+.content .comment_list dl{
+    margin: 0px;
+    padding: 3px 0px 5px 0px;
+}
+.content .comment_list dl.comment_content{
+    border-bottom: 1px solid #ccc;
+}
+.content .comment_list dl dt{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    color: #369;
+}
+.content .comment_list dl dd{
+    margin: 0px;
+    padding: 0px;
+    line-height: 180%;
+}
+.content .comment_list dl dd.comment_date{
+    color: #666;
+}
+.content .comment_list dl.comment_add{
+    text-align: right;
+}
+.content .comment_list dl.comment_add textarea{
+    width: 100%;
+    resize: none;
+    text-indent: 5px;
+    border-radius: 3px;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    padding: 0px;
+    border: 1px solid #ddd;
+}
+.content .comment_list dl.comment_add input{
+    cursor: pointer;
+}
+.content .comment_list dl.comment_load dd{
+    background: url(../img/comment_load.gif)no-repeat 75px;
+}
+.content .load_more{
+    width: 100%;
+    margin: 0px;
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px;
+}
+
+#footer{
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    background: #ddd;
+}
+
+/*提示框*/
+#loading,#error{
+    line-height: 31px;
+    font-size: 13px;
+    font-weight: bold;
+    text-indent: 40px;
+    color: #666;
+}
+.being{
+    background: url(../img/loading.gif)no-repeat 20px center !important;
+}
+.done{
+    background: url(../img/success.gif)no-repeat 20px center !important;
+}
+#error{
+    background: url(../img/error.png)no-repeat 20px center;
+}
